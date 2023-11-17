@@ -1,6 +1,6 @@
 import Link from 'next/link';
-import GithubIcon from '@/images/github-footer.svg';
-import LinkedinIcon from '@/images/linkedin-footer.svg';
+import GithubIcon from '@/icons/github-footer.svg';
+import LinkedinIcon from '@/icons/linkedin-footer.svg';
 import Image from 'next/image';
 export default function Footer() {
   return (

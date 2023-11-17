@@ -11,8 +11,8 @@ export default function Header() {
     },
   ];
   return (
-    <header className='sticky top-0 flex items-center justify-between bg-gradient-to-b from-white from-70% to-transparent p-6 z-10'>
-      <span className='bg-gradient-to-r from-primary-blue to-primary-yellow bg-clip-text text-h4 font-bold text-transparent'>
+    <header className='sticky top-0 z-10 flex items-center justify-between bg-gradient-to-b from-white from-70% to-transparent p-6'>
+      <span className='bg-gradient-to-r from-primary-blue to-primary-yellow bg-clip-text text-2xl font-bold text-transparent'>
         {' '}
         Tama.dev
       </span>
