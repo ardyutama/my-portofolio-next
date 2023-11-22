@@ -3,7 +3,7 @@ import Image from 'next/image';
 import Github from '@/icons/github-blue.svg';
 import Linkedin from '@/icons/linkedin-blue.svg';
 import Donwload from '@/icons/download-white.svg';
-import { experiences } from './content';
+import { experiences, techStacks } from './content';
 
 export const AboutSection = () => {
   return (
@@ -20,6 +20,8 @@ export const AboutSection = () => {
             src={Photo}
             alt='photo'
             className='mt-8 -translate-x-2 bg-contain bg-center'
+            quality={10}
+            priority
           />
         </div>
         <div className='mx-6 flex flex-col items-center gap-4 text-center'>
@@ -40,12 +42,19 @@ export const AboutSection = () => {
             <Image src={Donwload} alt='download' />
           </a>
         </div>
-        <div className='my-8 w-full'>
-          <div className='flex flex-col items-center gap-6 rounded-2xl border-[1px] bg-skeleton px-4 py-6'>
-            <h3 className='text-3xl font-bold'>
-              <span className='text-primary-blue'>Tech</span> Stacks
-            </h3>
-            <div className=''></div>
+        <div className='my-8 flex w-full flex-col items-center gap-6 rounded-2xl border-[1px] bg-skeleton px-4 py-6 overflow-hidden'>
+          <h3 className='text-3xl font-bold'>
+            <span className='text-primary-blue'>Tech</span> Stacks
+          </h3>
+          <div className='flex w-full animate-slideshow-icon-mobile justify-center gap-6 md:animate-slideshow-icon-desktop'>
+            {techStacks.map((techStack) => (
+              <div
+                className='m-2 flex h-[64px] w-[64px] flex-none justify-center rounded-full shadow-md'
+                key={techStack.name}
+              >
+                <Image src={techStack.icon} alt={techStack.name} width='32' />
+              </div>
+            ))}
           </div>
         </div>
         <div className='flex w-full flex-col items-start gap-6'>

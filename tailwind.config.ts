@@ -20,19 +20,6 @@ const config: Config = {
         header: '0px 2px 6px 0px rgba(0, 0, 0, 0.10)',
         card: '0px 4px 12px 0px rgba(0, 0, 0, 0.15)',
       },
-      // fontSize: {
-      //   h1: '64px',
-      //   h2: '48px',
-      //   h3: '32px',
-      //   h4: '24px',
-      //   'medium-1': '32px',
-      //   'medium-2': '24px',
-      //   'medium-3': '18px',
-      //   'medium-4': '16px',
-      //   'paragraph-1': '24px',
-      //   'paragraph-2': '18px',
-      //   'paragraph-3': '16px',
-      // },
       fontSize: {
         sm: '0.600rem',
         base: '0.8rem',
@@ -49,6 +36,20 @@ const config: Config = {
       fontWeight: {
         normal: '400',
         bold: '700',
+      },
+      keyframes: {
+        slideshowMobile: {
+          '0%': { transform: 'translateX(400px)' },
+          '100%': { transform: 'translateX(calc(-250px * 2))' },
+        },
+        slideshowDesktop: {
+          '0%': { transform: 'translateX(calc(400px * 2))' },
+          '100%': { transform: 'translateX(calc(-250px * 4))' },
+        },
+      },
+      animation: {
+        'slideshow-icon-mobile': 'slideshowMobile 10s infinite linear',
+        'slideshow-icon-desktop': 'slideshowDesktop 15s infinite linear',
       },
     },
   },

@@ -7,22 +7,22 @@ import './globals.css';
 const MonaSans = localFont({
   src: [
     {
-      path: './font/MonaSans-Regular.woff2',
+      path: './features/ui/font/MonaSans-Regular.woff2',
       weight: '400',
       style: 'normal',
     },
     {
-      path: './font/MonaSans-Medium.woff2',
+      path: './features/ui/font/MonaSans-Medium.woff2',
       weight: '500',
       style: 'medium',
     },
     {
-      path: './font/MonaSans-Bold.woff2',
+      path: './features/ui/font/MonaSans-Bold.woff2',
       weight: '700',
       style: 'bold',
     },
     {
-      path: './font/MonaSansExpanded-Bold.woff2',
+      path: './features/ui/font/MonaSansExpanded-Bold.woff2',
       weight: '600',
       style: 'expand-bold',
     },
@@ -43,7 +43,7 @@ export default function RootLayout({
     <html lang='en'>
       <body className={MonaSans.className}>
         <Header />
-        <main>{children}</main>
+          <main>{children}</main>
         <Footer />
       </body>
     </html>
