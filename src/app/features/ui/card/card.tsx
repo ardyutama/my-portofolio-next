@@ -5,7 +5,7 @@ export default function Card({ data }: CardProps) {
   return (
     <>
       <Link
-        className='group flex max-w-[350px] snap-center list-none flex-col gap-2 
+        className='group flex max-w-[280px] snap-center list-none flex-col gap-2 
         rounded-3xl border-[1px] border-[#E5E7EB] bg-white p-6 text-start 
         shadow-card'
         href={data.link}
