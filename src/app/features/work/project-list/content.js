@@ -1,5 +1,6 @@
 import bpr from '@/images/bpr.svg';
 import spotify from '@/images/spotify.svg';
+import visity from "@/images/visity.png"
 
 let projects = [
   {
@@ -21,7 +22,7 @@ let projects = [
     name: 'Visity',
     description:
       'Booking and Appointment guests and admin using automate fill identity card scanner.',
-    photo: '',
+    photo: visity,
     tech: ['ReactJs', 'TypeScript', 'Laravel', 'Figma', 'PHP'],
     link: 'https://github.com/ardyutama/mailing-bpr',
   },

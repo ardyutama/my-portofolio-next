@@ -1,9 +1,13 @@
 import { projects } from './content';
 import Card from '@/app/features/ui/card/card';
+import Circle2 from '@/images/Circle-2.png'
+import Image from 'next/image';
+import { motion, Variants } from "framer-motion"
 
-export default function ProjectList() {
+export const ProjectList = () => {
   return (
-    <section className='mb-6 flex flex-col items-center gap-6'>
+    <section className='mb-6 flex flex-col items-center gap-6 relative'>
+      <Image src={Circle2} alt='circle2' className='absolute -right-5 -z-10 ' />
       <h2 className='text-4xl font-bold text-primary-blue'>
         Featured <span className='text-black'>Projects.</span>
       </h2>

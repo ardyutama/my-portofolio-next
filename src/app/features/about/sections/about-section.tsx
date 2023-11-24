@@ -4,6 +4,7 @@ import Github from '@/icons/github-blue.svg';
 import Linkedin from '@/icons/linkedin-blue.svg';
 import Donwload from '@/icons/download-white.svg';
 import { experiences, techStacks } from './content';
+import Link from 'next/link';
 
 export const AboutSection = () => {
   return (
@@ -20,7 +21,6 @@ export const AboutSection = () => {
             src={Photo}
             alt='photo'
             className='mt-8 -translate-x-2 bg-contain bg-center'
-            quality={10}
             priority
           />
         </div>
@@ -31,11 +31,16 @@ export const AboutSection = () => {
             Surabaya, Indonesia.
           </p>
           <div className='flex items-center gap-2'>
-            <Image src={Github} alt='github' />
-            <Image src={Linkedin} alt='linkedin' />
+            <Link href="https://github.com/ardyutama" target="_blank">
+              <Image src={Github} alt='github' />
+            </Link>
+            <Link href="https://www.linkedin.com/in/ardy-putra-utama/" target="_blank">
+              <Image src={Linkedin} alt='linkedin' />
+            </Link>
           </div>
           <a
-            href='#'
+            href='https://drive.google.com/file/d/15J012HE4bYpBR6cd2SCr6DK0HvkTtXGK/view?usp=sharing'
+            target='_blank'
             className='text-medium-3 flex gap-2 rounded-3xl bg-primary-blue p-4 font-medium text-white'
           >
             <span>Download CV</span>
@@ -52,7 +57,7 @@ export const AboutSection = () => {
                 className='m-2 flex h-[64px] w-[64px] flex-none justify-center rounded-full shadow-md'
                 key={techStack.name}
               >
-                <Image src={techStack.icon} alt={techStack.name} width='32' />
+                <Image src={techStack.icon} alt={techStack.name} className='self-center flex w-8' />
               </div>
             ))}
           </div>
