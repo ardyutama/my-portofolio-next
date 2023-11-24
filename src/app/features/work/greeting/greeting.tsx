@@ -7,12 +7,12 @@ export const Greeting = () => {
   return (
     <section className='flex min-h-[90vh] justify-center'>
       <motion.div
-        className='absolute -left-[8rem] w-60'
+        className='absolute left-0 w-60'
         initial={{ x: -100 }}
         animate={{ x: 0 }}
         transition={{ duration: 2, type: 'spring' }}
       >
-        <Image src={Circle} alt='circle' />
+        <Image src={Circle} alt='circle' className='-translate-x-[8rem]' />
       </motion.div>
       <div className='inline-flex flex-col items-center justify-center gap-6 px-12 text-center'>
         <h1 className='text-3xl font-bold'>
