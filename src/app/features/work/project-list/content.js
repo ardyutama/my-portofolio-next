@@ -1,6 +1,6 @@
 import bpr from '@/images/bpr.svg';
 import spotify from '@/images/spotify.svg';
-import visity from "@/images/visity.png"
+import visity from '@/images/visity.png';
 
 let projects = [
   {

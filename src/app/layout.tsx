@@ -36,11 +36,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang='en'>
-      <body className={MonaSans.className}>
+      <body className={`${MonaSans.className}`}>
         <Header />
-        <PageTransition>
-          {children}
-        </PageTransition>
+        <PageTransition>{children}</PageTransition>
         <Footer />
       </body>
     </html>

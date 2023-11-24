@@ -11,7 +11,7 @@ export default function Header() {
     },
   ];
   return (
-    <header className='sticky top-0 z-10 flex items-center justify-between bg-gradient-to-b from-white from-70% to-transparent p-6'>
+    <div className='sticky top-0 z-10 flex items-center justify-between bg-gradient-to-b from-white from-70% to-transparent p-6'>
       <span className='bg-gradient-to-r from-primary-blue to-primary-yellow bg-clip-text text-2xl font-bold text-transparent'>
         {' '}
         Tama.dev
@@ -21,6 +21,6 @@ export default function Header() {
           <Navigation href={nav.href} title={nav.name} key={nav.name} />
         ))}
       </nav>
-    </header>
+    </div>
   );
 }

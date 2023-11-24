@@ -5,8 +5,8 @@ import javascriptIcon from '@/icons/devicon_javascript.png';
 import pythonIcon from '@/icons/logos_python.png';
 import reactIcon from '@/icons/logos_react.png';
 import cssIcon from '@/icons/logos_css-3.png';
-import nextIcon from '@/icons/nonicons_next-16.png'
-import expressIcon from "@/icons/simple-icons_express.png"
+import nextIcon from '@/icons/nonicons_next-16.png';
+import expressIcon from '@/icons/simple-icons_express.png';
 
 let experiences = [
   {

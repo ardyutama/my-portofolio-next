@@ -6,10 +6,9 @@ export const metadata: Metadata = {
   description: 'This is list of my projects that I already working on',
 };
 export default function Home() {
-  return(
+  return (
     <>
       <WorkSection />
     </>
-  )
-    ;
+  );
 }
