@@ -4,7 +4,7 @@ import LinkedinIcon from '@/icons/linkedin-footer.svg';
 import Image from 'next/image';
 export default function Footer() {
   return (
-    <header className='flex items-center gap-4 bg-black p-7'>
+    <header className='z-20 flex items-center gap-4 bg-black p-7'>
       <nav className='flex items-center gap-6'>
         <Link href='#'>
           <Image src={GithubIcon} alt='Github' />

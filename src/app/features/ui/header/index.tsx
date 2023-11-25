@@ -11,7 +11,7 @@ export default function Header() {
     },
   ];
   return (
-    <header className='sticky top-0 bg-gradient-to-b from-white from-80% to-transparent z-10'>
+    <header className='sticky top-0 z-20 bg-gradient-to-b from-white from-80% to-transparent'>
       <div className='flex items-center justify-between p-6'>
         <span className='bg-gradient-to-r from-primary-blue to-primary-yellow bg-clip-text text-2xl font-bold text-transparent'>
           {' '}

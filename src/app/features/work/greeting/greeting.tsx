@@ -4,6 +4,11 @@ import Image from 'next/image';
 import { motion } from 'framer-motion';
 
 export const Greeting = () => {
+    const handleClick = () => {
+        const element = document.getElementById('projects');
+        if (element)
+        element?.scrollIntoView({behavior: 'smooth', block: "start" });
+    };
   return (
     <section className='flex min-h-[90vh] justify-center'>
       <motion.div
@@ -30,11 +35,12 @@ export const Greeting = () => {
           1<span className='text-primary-blue'>+</span> Years in Industry.
         </h3>
         <motion.button
-          className='rounded-3xl p-4 font-medium text-white'
+          className='inline-block rounded-3xl p-4 font-medium text-white'
           animate={{ backgroundColor: ['#0367FC', '#80D0C7'] }}
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}
           transition={{ repeat: Infinity, duration: 1, repeatType: 'mirror' }}
+          onClick={handleClick}
         >
           See my work
         </motion.button>

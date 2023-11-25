@@ -23,7 +23,8 @@
       "@/features/*": ["./src/app/features/*"],
       "@/ui/*": ["./src/app/features/ui/*"],
       "@/images/*": ["./src/app/features/ui/images/*"],
-      "@/icons/*": ["./src/app/features/ui/icons/*"]
+      "@/icons/*": ["./src/app/features/ui/icons/*"],
+      "@/animation/*": ["./src/app/features/ui/animation/*"]
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
