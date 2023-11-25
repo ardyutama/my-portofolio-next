@@ -1,7 +1,7 @@
 import { Variants, motion } from 'framer-motion';
 
 const variants: Variants = {
-  offscreen: { opacity: 0, x: -50 },
+  offscreen: { opacity: 0, x: -10 },
   onscreen: {
     opacity: 1,
     x: 0,
