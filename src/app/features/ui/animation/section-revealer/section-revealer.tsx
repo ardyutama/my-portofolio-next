@@ -17,9 +17,11 @@ const variants: Variants = {
 export const SectionRevealer = ({
   className,
   children,
+  id,
   ...props
 }: {
   className: string;
+  id ?: string;
   children: React.ReactNode;
 }) => {
   return (
@@ -29,6 +31,7 @@ export const SectionRevealer = ({
       initial='hidden'
       whileInView='onscreen'
       viewport={{ once: true }}
+      id={id}
       {...props}
     >
       <motion.div
